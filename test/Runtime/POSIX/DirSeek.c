@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
   assert(de);
   strcpy(first, de->d_name);
   off_t pos = telldir(d);
-  printf("pos: %d\n", telldir(d));
+  printf("pos: %ld\n", telldir(d));
   de = readdir(d);
   assert(de);
   strcpy(second, de->d_name);
